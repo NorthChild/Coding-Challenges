@@ -11,6 +11,7 @@
 # 'Funeral'
 # 'Real Fun'
 
+
 def anagramCheck(one, two):
     # first we standardize all letters in the lists by 'lower-casing' them
     one = one.lower()
@@ -37,12 +38,14 @@ def anagramCheck(one, two):
 
     # then we check if the two lists are the same
     if (sorted1st == sorted2nd):
-        print('The chosen words: (' + one + ') and (' + two + '), are Anagrams')
+        print('The chosen words: (' + one.upper() + ') and (' + two.upper() + '), are Anagrams \n')
     else:
-        print('The chosen words: (' + one + ') and (' + two + '), are NOT Anagrams')
+        print('The chosen words: (' + one.upper() + ') and (' + two.upper() + '), are NOT Anagrams \n')
+
 
 
 # lets call the function to start checking
 anagramCheck('Astronomer', 'Moon starer')
 anagramCheck('Flat earthers', 'make me feel better about myself')
 anagramCheck('Funeral', 'Real Fun')
+anagramCheck('Baduski', 'Sticks')
