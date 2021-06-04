@@ -15,10 +15,12 @@ def averageOfArray(array):
         sum += i
     # we devide the sum by the length of the array
     total = sum / length
-    print(total)
+    print('The Average of the Array is: ' + str(total))
 
 
 
 averageOfArray(arr)
 averageOfArray(arrII)
 averageOfArray(arrIII)
+
+
