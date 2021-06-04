@@ -1,27 +1,29 @@
 # check if two strings are anagrams
-# example 1
-x = 'Astronomer'
-y = 'Moon starer'
-# example 2
-a = 'Flat earthers'
-c = 'make me feel better about myself'
-# example 3
-d = 'Funeral'
-c = 'Real Fun'
+# Example 1
+# 'Astronomer'
+# 'Moon starer'
+
+# Example 2
+# 'Flat earthers'
+# 'make me feel better about myself'
+
+# Example 3
+# 'Funeral'
+# 'Real Fun'
 
 # split the strings and place them in a list
 # order them alphabetically, if the first letter isnt a match, exit the function
 # compare the two lists element by element
 
 
-def anagramCheck(x, y):
+def anagramCheck(one, two):
     # first we standardize all letters in the lists by 'lower-casing' them
-    x = x.lower()
-    y = y.lower()
+    one = one.lower()
+    two = two.lower()
 
     # we then separate them and place them in a list
-    firstString = list(x)
-    secondString = list(y)
+    firstString = list(one)
+    secondString = list(two)
 
     # we then sort them alphabetically
     sorted1st = sorted(firstString)
@@ -40,12 +42,12 @@ def anagramCheck(x, y):
 
     # then we check if the two lists are the same
     if (sorted1st == sorted2nd):
-        print('The chosen words are anagrams')
+        print('The chosen words: (' + one + ') and (' + two + '), are Anagrams')
     else:
-        print('The chosen words are NOT anagrams')
+        print('The chosen words: (' + one + ') and (' + two + '), are NOT Anagrams')
 
 
-# lets call the function to start checking 
-anagramCheck(x, y)
-anagramCheck(a, c)
-anagramCheck(d, c)
+# lets call the function to start checking
+anagramCheck('Astronomer', 'Moon starer')
+anagramCheck('Flat earthers', 'make me feel better about myself')
+anagramCheck('Funeral', 'Real Fun')
