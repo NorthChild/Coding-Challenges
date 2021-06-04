@@ -48,4 +48,3 @@ def anagramCheck(one, two):
 anagramCheck('Astronomer', 'Moon starer')
 anagramCheck('Flat earthers', 'make me feel better about myself')
 anagramCheck('Funeral', 'Real Fun')
-anagramCheck('Baduski', 'Sticks')
