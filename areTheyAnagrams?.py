@@ -11,11 +11,6 @@
 # 'Funeral'
 # 'Real Fun'
 
-# split the strings and place them in a list
-# order them alphabetically, if the first letter isnt a match, exit the function
-# compare the two lists element by element
-
-
 def anagramCheck(one, two):
     # first we standardize all letters in the lists by 'lower-casing' them
     one = one.lower()
