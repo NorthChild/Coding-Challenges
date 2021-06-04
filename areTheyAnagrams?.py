@@ -3,8 +3,8 @@
 x = 'Astronomer'
 y = 'Moon starer'
 # example 2
-a = 'Astronomers'
-c = 'Moon landing'
+a = 'Flat earthers'
+c = 'make me feel better about myself'
 # example 3
 d = 'Funeral'
 c = 'Real Fun'
