@@ -1,20 +1,51 @@
-print(' ')
-print(' |----------------------  testing ----------------------| ')
-print(' ')
+# check if two strings are anagrams
+# example 1
+x = 'Astronomer'
+y = 'Moon starer'
+# example 2
+a = 'Astronomers'
+c = 'Moon landing'
+# example 3
+d = 'Funeral'
+c = 'Real Fun'
+
+# split the strings and place them in a list
+# order them alphabetically, if the first letter isnt a match, exit the function
+# compare the two lists element by element
 
 
+def anagramCheck(x, y):
+    # first we standardize all letters in the lists by 'lower-casing' them
+    x = x.lower()
+    y = y.lower()
 
-import matplotlib.pyplot as plt
+    # we then separate them and place them in a list
+    firstString = list(x)
+    secondString = list(y)
 
-x = [1, 2, 3, 4, 5, 6, 7]
-y = [15, 22, 16, 12, 14, 15, 19]
+    # we then sort them alphabetically
+    sorted1st = sorted(firstString)
+    sorted2nd = sorted(secondString)
 
-plt.plot(x, y)
-plt.plot(x, y, marker="*", markersize=2, color="green")
-plt.show()
+    # we then remove possible empty spaces
+    # for the first list
+    for i in sorted1st:
+        if i == ' ':
+            sorted1st.remove(i)
+
+    # for the second list
+    for i in sorted2nd:
+        if i == ' ':
+            sorted2nd.remove(i)
+
+    # then we check if the two lists are the same
+    if (sorted1st == sorted2nd):
+        print('The chosen words are anagrams')
+    else:
+        print('The chosen words are NOT anagrams')
 
 
-
-print(' ')
-print(' |----------------------  testing ----------------------| ')
-print(' ')
+# lets call the function to start checking 
+anagramCheck(x, y)
+anagramCheck(a, c)
+anagramCheck(d, c)
