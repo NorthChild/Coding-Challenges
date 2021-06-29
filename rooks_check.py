@@ -3,12 +3,12 @@
 
 board = [[0,1,0,0],
          [0,0,1,0],
-         [0,0,1,0],
+         [0,0,0,0],
          [0,0,0,1]]
 
 
 def boardCheck(instance):
-
+    print('\nAre all towers safe ?')
     n = len(instance)
 
     for row_i in range(n):
