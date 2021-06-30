@@ -1,4 +1,4 @@
-# Coding Challenges
+# Coding Challenges with solutions
 A collection of fun coding challenges in python, some found on the web, some created by me
 
 - Change a file name, camelCase to under_score
